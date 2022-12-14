@@ -1,18 +1,18 @@
-#include "stdio.h"
-/**
- * main - Entry point
- *
- * Return: Alway 0 (Sucess)
- */
+#include "main.h"
 
+/**
+ * main - entry point
+ *
+ * Return: 0 (Success)
+ */
 int main(void)
 {
-	char *h = "_putchar\n";
+	char *output = "_putchar\n";
 
-	while (*h)
+	while (*output)
 	{
-		_putchar(*h);
-		h++;
+		_putchar(*output);
+		output++;
 	}
 	return (0);
 }

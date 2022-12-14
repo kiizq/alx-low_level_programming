@@ -1,21 +1,17 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_last_digit - will print the last digit of a given number.
- * @n: Number used to find the last digit.
+ * print_last_digit - prints the last digit of a number
+ * @n: the number
  *
- * Description: will print the last digit of a given number. If the
- * number is a negative the value will be return unsigned int.
- *
- * Return: last digit as int value.
+ * Return: last digit of n
  */
 int print_last_digit(int n)
 {
-	n %= 10;
-	if (n < 0)
-	{
-		n *= -1;
-	}
-	_putchar('0' + n);
-	return (n);
+	int x = (n % 10);
+
+	if (x < 0)
+		x *= -1;
+	_putchar(x + '0');
+	return (x);
 }
