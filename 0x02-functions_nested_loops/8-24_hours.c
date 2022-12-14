@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * jack_bauer - prints every minute of the day of Jack Bauer,
@@ -20,17 +20,18 @@ for (m0 = 0; m0 <= 5; m0++)
 {
 for (m1 = 0; m1 <= 9; m1++)
 {
-if ((h0 == 2 && h1 == 3 && m0 == 5 && m1 == 9) != 1)
+if ((h0 <= 2) && (h1 <= 3))
 {
-_putchar('0' + h0);
-_putchar('0' + h1);
-_putchar(':');
-_putchar('0' + m0);
-_putchar('0' + m1);
-_putchar('\n');
+putchar('0' + h0);
+putchar('0' + h1);
+putchar(':');
+putchar('0' + m0);
+putchar('0' + m1);
+putchar('\n');
 }
 }
 }
 }
 }
+return (0);
 }
