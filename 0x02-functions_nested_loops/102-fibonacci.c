@@ -12,7 +12,7 @@ int main(void)
 	unsigned long int n2 = 2;
 	unsigned long int tmp;
 
-	printf("%d, %d, ", n1, n2);
+	printf("%lu, %lu, ", n1, n2);
 	count = 3;
 	while (count < 50)
 	{
@@ -24,5 +24,6 @@ int main(void)
 		if (count != 50)
 			printf(", ");
 	}
+	putchar('\n');
 	return (0);
 }
