@@ -20,15 +20,14 @@ for (m0 = 0; m0 <= 5; m0++)
 {
 for (m1 = 0; m1 <= 9; m1++)
 {
-if ((h0 <= 2) && (h1 <= 3))
-{
 putchar('0' + h0);
 putchar('0' + h1);
 putchar(':');
 putchar('0' + m0);
 putchar('0' + m1);
 putchar('\n');
-}
+if (h0 == 2 && h1 == 3 && m0 == 5 && m1 == 9)
+return;
 }
 }
 }
