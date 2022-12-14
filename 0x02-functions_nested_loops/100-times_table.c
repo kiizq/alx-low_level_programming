@@ -24,7 +24,7 @@ void print_times_table(int n)
 			n0 = m / 100;
 			n1 = (m % 100) / 10;
 			n2 = m % 10;
-			
+
 			if (c != 0)
 			{
 				if (n0 == 0) /* n0 */
