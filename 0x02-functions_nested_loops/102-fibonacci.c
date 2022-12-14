@@ -14,14 +14,14 @@ int main(void)
 
 	printf("%lu, %lu, ", n1, n2);
 	count = 3;
-	while (count < 50)
+	while (count <= 50)
 	{
 		tmp = n1 + n2;
 		printf("%lu", tmp);
 		n1 = n2;
 		n2 = tmp;
 		count++;
-		if (count != 50)
+		if (count <= 50)
 			printf(", ");
 	}
 	putchar('\n');
