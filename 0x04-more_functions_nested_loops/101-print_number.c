@@ -28,7 +28,7 @@ void print_number(int n)
 	while (i <= divider)
 	{
 		ans = (int)((n / divider) * i) % 10;
-		if (i == divider)
+		if (i == 10)
 		{
 			if (ans != 0)
 				_putchar(ans + '0');
