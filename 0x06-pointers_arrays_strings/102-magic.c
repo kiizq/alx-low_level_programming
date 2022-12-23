@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-/**
- * main - entry point
- *
- * Return: always (o)
- */
 int main(void)
 {
 	int n;
