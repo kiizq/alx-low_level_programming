@@ -1,18 +1,22 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _pow_recursion - function that returns the value of x
- * raised to the power of y
- * @x: value to be manipulated.
- * @y: manipulator
+ * _pow_recursion - returns the value of x raised to the power of y
+ * @x: integer
+ * @y: integer
  *
- * Return: Sum as Int
+ * Return: value of x raised to the power y
+ *         -1 if y less than 0
  */
 int _pow_recursion(int x, int y)
 {
 	if (y < 0)
+	{
 		return (-1);
-	if (!y)
+	}
+	if (y == 0)
+	{
 		return (1);
-	return (x * _pow_recursion(x, --y));
+	}
+	return (x * _pow_recursion(x, (y - 1)));
 }

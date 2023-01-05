@@ -1,14 +1,19 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _strlen_recursion - function that returns the length of a string.
- * @s: string to measure.
+ * _strlen_recursion - returns the length of a string
+ * @s: string
  *
- * Return: Length of the string as INT.
+ * Return: length of string s
  */
 int _strlen_recursion(char *s)
 {
-	if (*s)
-		return (1 + _strlen_recursion((s + 1)));
-	return (0);
+	int count = 0;
+
+	if (*s == '\0')
+	{
+		return (0);
+	}
+	count++;
+	return (count + _strlen_recursion((s + 1)));
 }

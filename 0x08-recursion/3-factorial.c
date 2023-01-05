@@ -1,16 +1,21 @@
-#include "holberton.h"
+#include "main.h"
 
+int _factorial(int n);
 /**
- * factorial - desciption
- * @n: number to find the factorial for.
+ * factorial - returns the factorial of a given number
+ * @n: integer
  *
- * Return: Factorial (INT)
+ * Return: factorial of integer n
  */
 int factorial(int n)
 {
 	if (n < 0)
+	{
 		return (-1);
-	else if (n <= 1)
+	}
+	else if (n == 0)
+	{
 		return (1);
+	}
 	return (n * factorial(n - 1));
 }
