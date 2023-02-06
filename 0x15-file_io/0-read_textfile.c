@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <fcntl.h>
 /*
  * read_textfile- Read test file print to STOUT
  * @filename: textfile being recived
@@ -20,7 +21,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	buf = malloc(sizeof(char) * letters);
 	t = read(fd, buf, letters);
-	w = write(STOUT_FILENO, buf, t);
+	w = write(STDOUT_FILENO, buf, t);
 
 	free(buf);
 	close(fd);
